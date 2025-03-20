@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Biblioteca</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-image: url(images/fonding.jpg);">
+    <div class="login-container">
+      <h2>Iniciar Sesión</h2>
+      <input type="text" id="username" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <select id="role">
+        <option value="user">Usuario</option>
+        <option value="admin">Administrador</option>
+      </select>
+      <button id="btnLogin" class="formbold-btn" onclick="Login()">Ingresar</button>
+
+      <p id="message"></p>
+    </div>
+    <div class="registrar">
+      <a href="registrar.html">
+        <button id="btnRegistrar" class="btnRegistrar">
+          Registrar
+        </button>
+      </a>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
