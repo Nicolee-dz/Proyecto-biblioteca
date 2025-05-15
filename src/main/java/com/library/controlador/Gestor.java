@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Gestor {
 
     @Autowired
-//jejejej
 
     @PostMapping("/login")
     public Map<String, Object> login(@RequestBody Map<String, Object> credentials) {
